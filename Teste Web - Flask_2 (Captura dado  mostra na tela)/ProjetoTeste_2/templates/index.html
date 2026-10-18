@@ -1,0 +1,38 @@
+<!--Ponto de exclamação para gerar um documento HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Python</title>
+<!-------------------------------------------->>
+    <!-- Acesse o link de conexao do boot strap   https://getbootstrap.com/docs/5.3/getting-started/download/-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-------------------------------------------->>
+</head>
+<body class="container pt-5 bg-dark"> <!--pt-5 significa padding top-->
+    <h1 class="text-white"> Teste Python</h1>
+    <hr class="text-white" >
+    
+    <!-- Botão no estilo Html--> 
+    <button> Clique aqui </button>  
+    
+    <br><br>
+   
+    <!-- Botão no estilo Boot strap cor primária--> 
+    <button class="btn btn-primary"> Clique aqui BooT S. </button>
+    <hr class="text-white" >
+    <!--------------------------------------------->
+    <!----------------- Formulário ---------------->
+    <!--------------------------------------------->
+    <form action="/enviar" method="post">
+        <div class="mb-3">
+            <label for="nome" class="form-label text-white">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome_usuario" required>
+        </div>
+       <button class="btn btn-primary">Enviar</button>
+    </form>
+
+</body>
+</html>
