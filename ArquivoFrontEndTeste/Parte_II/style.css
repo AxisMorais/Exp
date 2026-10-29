@@ -1,0 +1,51 @@
+.container-site {
+    display: grid;
+    /* Cria uma grade de 3 linhas e 4 colunas  - 
+        fr: Significa fractional unit (unidade fracionária). 
+        Sendo dividida em 4 partes iguais 
+    */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /*
+        Auto Significa automático.
+    */
+    grid-template-rows: auto 1fr auto;
+    
+    /* Mapeia o posicionamento dos elementos nas duas dimensões */
+    grid-template-areas: 
+        "topo  topo  topo  topo"   /* Linha 1: Cabeçalho ocupa as 4 colunas */
+        "menu  corpo corpo corpo"  /* Linha 2: Lateral ocupa 1 col, Conteúdo ocupa 3 col */
+        "base  base  base  base";  /* Linha 3: Rodapé ocupa as 4 colunas */
+    
+    gap: 15px; /* Espaçamento uniforme entre as linhas e colunas */
+    min-height: 100vh; /* Faz o layout ocupar toda a altura da tela */
+}
+
+/* Conecta cada classe HTML à sua respectiva área no mapa do Grid */
+.cabecalho {
+  grid-area: topo;
+  background-color: #34495e;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.menu-lateral {
+  grid-area: menu;
+  background-color: #2ecc71;
+  color: white;
+  padding: 20px;
+}
+
+.conteudo {
+  grid-area: corpo;
+  background-color: #ecf0f1;
+  padding: 20px;
+}
+
+.rodape {
+  grid-area: base;
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
