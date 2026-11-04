@@ -1,0 +1,49 @@
+
+.container{
+    display:grid;
+    /*Utilizado para gerar as colunas
+      1fr simpoboliza fracionado */ 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:    auto 1fr auto;
+   grid-template-areas: 
+        "topo topo topo topo"
+        "menuEsquerdo centro centro centro"
+        "menuEsquerdo centro centro centro"
+        "rodape rodape rodape rodape";
+    gap:15px;    
+    min-height:100vh;
+}
+    
+
+.cabecalho{
+    grid-area:topo;
+    background-color: #34495e;
+    color:white;
+    padding: 20px;
+    text-align: center;    
+}
+
+.menuLateral{
+    grid-area:menuEsquerdo;
+    background-color: #2ecc71;;
+    color:rgb(247, 245, 245);
+    padding: 20px;
+    text-align: left;    
+    
+}
+.conteudo{
+    grid-area:centro;
+    background-color: #ecf0f1;
+    color:rgb(58, 57, 57);
+    padding: 20px;
+    text-align: center;    
+    
+}
+.rodape{
+    grid-area:rodape;
+    background-color: #2c3e50;
+    color:white;
+    padding: 20px;
+    text-align: center;    
+    
+}
